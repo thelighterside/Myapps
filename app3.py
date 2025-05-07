@@ -30,7 +30,7 @@ if df.empty:
 else:
     for idx, row in df.iterrows():
         question = row["Question"]
-        options = [row[f"Option{i}"] for i in range(1, 6)]
+        options = [row[f"Option{i}"] for i in range(1, 7)]
         correct_answer = row["Answer"]
 
         st.subheader(f"Q{idx+1}: {question}")
