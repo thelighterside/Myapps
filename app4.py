@@ -1,6 +1,6 @@
 from gtts import gTTS
 from io import BytesIO
-import streamlit as st  # Add this if not already included
+import streamlit as st
 
 st.title("🔊 Pronunciation Practice")
 
@@ -10,5 +10,4 @@ if word:
     tts = gTTS(word)
     audio_fp = BytesIO()
     tts.write_to_fp(audio_fp)
-    audio_fp.seek(0)  # ← Minimal necessary change
     st.audio(audio_fp.getvalue(), format="audio/mp3")
