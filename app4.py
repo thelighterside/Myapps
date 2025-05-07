@@ -1,4 +1,4 @@
-import gTTS as gtts
+import gTTS
 import BytesIO as io
 
 st.title("🔊 Pronunciation Practice")
