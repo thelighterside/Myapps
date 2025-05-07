@@ -1,5 +1,5 @@
-import gTTS
-import BytesIO as io
+from gtts import gTTS
+from io import BytesIO
 
 st.title("🔊 Pronunciation Practice")
 
